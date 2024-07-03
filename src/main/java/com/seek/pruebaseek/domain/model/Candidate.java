@@ -1,12 +1,13 @@
 package com.seek.pruebaseek.domain.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "candidates")
 public class Candidate {
     @Id
@@ -16,5 +17,4 @@ public class Candidate {
     private String email;
     private String gender;
     private Double salaryExpected;
-
 }
