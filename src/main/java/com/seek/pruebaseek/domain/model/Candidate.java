@@ -7,7 +7,6 @@ import javax.persistence.*;
 
 @Entity
 @Data
-@AllArgsConstructor
 @Table(name = "candidates")
 public class Candidate {
     @Id
